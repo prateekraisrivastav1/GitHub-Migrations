@@ -54,3 +54,43 @@ gh api search/code \
 | **Machine User PAT** | Service accounts, shared automation | Provision dedicated managed user |
 | **Individual User PAT** | Personal scripts, IDE auth | User creates new PAT post-migration |
 | **Eliminate** | Unused, duplicate, or obsolete | Don't migrate |
+
+## Step 3: Create GitHub Apps for Automation
+For most automation use cases, GitHub Apps are the preferred solution. They offer:
+
+- Fine-grained permissions: Request only what you need
+- Short-lived tokens: Installation tokens expire in 1 hour
+- Audit trail: All actions attributed to the app
+- No user dependency: App continues working regardless of user changes
+
+Generating Installation Tokens:
+```bash
+#!/bin/bash
+# generate-installation-token.sh
+# Generates a short-lived installation token for a GitHub App
+
+APP_ID="YOUR_APP_ID"
+INSTALLATION_ID="YOUR_INSTALLATION_ID"
+PRIVATE_KEY_PATH="path/to/private-key.pem"
+
+# Generate JWT
+now=$(date +%s)
+iat=$((now - 60))
+exp=$((now + 600))
+
+header=$(echo -n '{"alg":"RS256","typ":"JWT"}' | base64 | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+payload=$(echo -n "{\"iat\":${iat},\"exp\":${exp},\"iss\":\"${APP_ID}\"}" | base64 | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+
+signature=$(echo -n "${header}.${payload}" | openssl dgst -sha256 -sign "${PRIVATE_KEY_PATH}" | base64 | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+
+jwt="${header}.${payload}.${signature}"
+
+# Get installation token
+curl -s -X POST \
+  -H "Authorization: Bearer ${jwt}" \
+  -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/app/installations/${INSTALLATION_ID}/access_tokens" \
+  | jq -r '.token'
+```
+
+## Step 4: Setting up Machine User for Legacy Integrations
