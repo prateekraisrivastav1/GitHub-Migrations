@@ -214,9 +214,9 @@ Remember: In EMU, team membership is managed via your IdP. This is a great oppor
 
 ### Remove Secrets and Sensitive Data
 This is critical. Before migration:
-1. ** Rotate all secrets ** - Any token, API key, or credential in your code should be rotated to prevent the possiblity of comprimise from a leaked secret.
-2. ** Check for committed secrets ** - Use GitHub Secret Scanning or tools like truffleHog or gitleaks
-3. ** Review Actions secrets ** - Document all repository and organization secrets that will need to be recreated
+1. **Rotate all secrets** - Any token, API key, or credential in your code should be rotated to prevent the possiblity of comprimise from a leaked secret.
+2. **Check for committed secrets** - Use GitHub Secret Scanning or tools like truffleHog or gitleaks
+3. **Review Actions secrets** - Document all repository and organization secrets that will need to be recreated
 
 Check for exposed secrets using gitleaks
 ```bash
