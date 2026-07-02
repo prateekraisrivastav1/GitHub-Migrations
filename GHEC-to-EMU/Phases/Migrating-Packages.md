@@ -1,4 +1,4 @@
-# gh-migrate-packages
+# Migrating packages with gh-migrate-packages
 
 `gh-migrate-packages` is a [GitHub CLI](https://cli.github.com) extension to assist in the migration of packages between GitHub organizations and repositories. While GitHub Enterprise Importer handles many aspects of organization migration, there can be challenges with packages. This extension aims to fill the gaps in the existing solutions for migrating packages. Whether you are consolidating repositories in an organization or auditing packages in an existing organization, this extension can help.
 
