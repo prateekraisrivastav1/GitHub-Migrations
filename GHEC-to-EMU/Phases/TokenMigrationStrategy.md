@@ -94,3 +94,43 @@ curl -s -X POST \
 ```
 
 ## Step 4: Setting up Machine User for Legacy Integrations
+Some integrations simply can’t use GitHub Apps, they require a PAT. For these cases, create dedicated “machine users” (managed user accounts specifically for automation):
+
+### Provisioning a Machine User
+1. **Create an Identity in your IdP** specifically for the service.
+    - Use a descriptive name: ```svc-github-jenkins```, ```bot-deploy-automation```
+    - Use a group mailbox or distribution list for the email
+    - Assign a GitHub EMU application in your IdP
+2. **SCIM provisions the account on GitHub**
+    - Username will be something like ```svc-github-jenkins_acme```
+    - Account is managed like any other user
+3. **Create a PAT for the Machine User**
+    - Log in as the machine user (you'll need IdP creds)
+    - Generate a fine-grained PAT with minimal required permissions
+    - Set an appropriate expiration (and calendar a reminder to rotate!)
+4. **Store the token securely**
+    - Use a secrets manager (Vault, Azure Key Vault, AWS Secrets Manager)
+    - Never commit tokens to repositories
+    - Implement token rotation procedures
+
+#### Enabling Fine-Grained PAT Controls
+
+Require approval for fine-grained PATs (recommended)
+```bash
+gh api orgs/YOUR_ORG \
+  -X PATCH \
+  -f personal_access_token_requests_enabled=true
+```
+Restrict classic PAT access (optional but recommended)
+
+This can be done via Enterprise Settings → Policies → Personal access tokens
+
+#### Creating a Fine-Grained PAT
+
+Via UI: Settings → Developer settings → Personal access tokens → Fine-grained tokens
+##### Recommended settings:
+```bash
+# - Expiration: 90 days or less
+# - Repository access: Only select repositories
+# - Permissions: Minimum required for the use case
+```
