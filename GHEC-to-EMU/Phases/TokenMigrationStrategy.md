@@ -113,6 +113,7 @@ Some integrations simply can’t use GitHub Apps, they require a PAT. For these 
     - Never commit tokens to repositories
     - Implement token rotation procedures
 
+## Step 5: Fine Grained vs Classic PATs
 #### Enabling Fine-Grained PAT Controls
 
 Require approval for fine-grained PATs (recommended)
@@ -134,3 +135,29 @@ Via UI: Settings → Developer settings → Personal access tokens → Fine-grai
 # - Repository access: Only select repositories
 # - Permissions: Minimum required for the use case
 ```
+
+## Step 6: Update Consumers
+With new tokens created, update all consumers:
+
+**CI/CD pipelines**
+```bash
+# Before: Using personal PAT stored in org secrets
+env:
+  GITHUB_TOKEN: $
+
+# After: Using GitHub App installation token
+- uses: actions/create-github-app-token@v1
+  id: app-token
+  with:
+    app-id: $
+    private-key: $
+```
+
+**External Systems**
+
+| System | Update Location | Notes |
+|---|---|---|
+| Jenkins | Credentials store | Update GitHub server config |
+| ArgoCD | Repository secrets | Update all repo credentials |
+| Terraform | Provider config or env vars | May need state migration |
+| Scripts | Environment variables | Update deployment docs |
