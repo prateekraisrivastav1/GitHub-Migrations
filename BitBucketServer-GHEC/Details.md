@@ -34,3 +34,28 @@ There are limits to what GitHub Enterprise Importer can migrate
 
 To migrate a repository, you must be an **organization owner** for the destination organization in GitHub, or an **organization owner** must grant you the **migrator role**.
 
+You must also have required permissions and access to your Bitbucket Server instance:
+- Admin or super admin permissions
+- If your Bitbucket Server instance runs Linux, SFTP access to the instance, using a supported SSH private key 
+- If your Bitbucket Server instance runs Windows, file sharing (SMB) access to the instance
+
+## Organizational Structure
+
+BitBucket has repositories that are grouped into projects. 
+In GitHub, repositories are owned by organizations. 
+- DO NOT ASSUME TO CREATE ONE ORG IN GITHUB PER PROJECT IN BITBUCKET SERVER.
+
+## Running Migrations
+To help uncover problems that might be unique to your enterprise, it's better to perform a trial run of your migration. 
+### Test Migrations
+- Create a **test organization** to use as a destination for your trial migrations.
+- Use `-sandbox` at the end of the organization names.
+- Run the migrations
+- Complete the follow-up tasks described below for the trial migrations
+- Ask Users to validate the results of the migration.
+- Resolve any issues uncovered by your trail migrations.
+- If destination uses IP allow lists, configure the list to allow access by GitHub enterprise importer. 
+- Run your production migrations. 
+- Optionally, delete the test organization.
+
+
