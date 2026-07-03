@@ -6,7 +6,6 @@ Recommended way:
 - Azure Repos only migrates upto 180 days of history. If you wish to retain more history, you can use `git-lfs` command
 
 ## Migrating with Azure Repos
----
 *You must have a MacOS or Linux System and have **Git** and **Git Large file storage(Git LFS)***
 
 1. Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
@@ -42,3 +41,4 @@ You need to have these tools installed
 - Git Large File Storage (Git LFS) 
 
 1. Run `git tfs clone` passing your TFVC repository’s URL and repository path as arguments. For example, to convert the `example` repository from `https://dev.azure.com/octocat` into a Git repository stored in the `/example` directory, run `git tfs clone --branches=all https://dev.azure.com/octocat $/example`.
+2. Move into the directory for the newly-created git directory
