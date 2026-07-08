@@ -1,0 +1,25 @@
+,,,,,,Client Co Ltd Checklist,,,,,,,,,,,,,,,,,,,,
+Org_Name,Repo_Name,Last_Push,Last_Update,isFork,isArchived,Repo_Size(mb),Record_Count,Collaborator_Count,Protected_Branch_Count,PR_Review_Count,Milestone_Count,Issue_Count,PR_Count,PR_Review_Comment_Count,Commit_Comment_Count,Issue_Comment_Count,Issue_Event_Count,Release_Count,Project_Count,Branch_Count,Tag_Count,Discussion_Count,Has_Wiki,Full_URL,Migration_Issue,Created
+clientcoltd,closedsearch,2026-07-07T08:57:34Z,2026-07-07T07:26:29Z,FALSE,FALSE,566,101,3,null,0,0,5,22,0,0,38,33,0,null,7,0,0,FALSE,https://github.com/ClientCoLtd/closedsearch,FALSE,2026-07-07T07:13:16Z
+clientcoltd,emptyrepository,2026-07-07T06:49:42Z,2026-07-07T06:49:45Z,FALSE,FALSE,0,3,3,null,0,0,0,0,0,0,0,0,0,null,1,0,0,FALSE,https://github.com/ClientCoLtd/EmptyRepository,FALSE,2026-07-07T06:48:54Z
+clientcoltd,gh-dashboard-db,2026-07-07T06:43:57Z,2026-07-07T06:44:06Z,FALSE,FALSE,10,3,3,null,0,0,0,0,0,0,0,0,0,null,1,0,0,FALSE,https://github.com/ClientCoLtd/GH-Dashboard-DB,FALSE,2026-07-07T06:37:16Z
+clientcoltd,opensearch,2026-07-07T01:51:28Z,2026-07-07T06:28:02Z,TRUE,FALSE,605,3,3,null,0,0,0,0,0,0,0,0,0,null,1,0,0,TRUE,https://github.com/ClientCoLtd/OpenSearch,FALSE,2026-07-07T06:28:02Z
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Repository Size,,,,,,,,,,,,,,,,,,,,
+clientcoltd,closedsearch,,,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,emptyrepository,,,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,gh-dashboard-db,,,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,opensearch,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Teams & Member Counts,,,,,,,,,,,,,,,,,,,,
+TEAM NAME,MEMBERS,SLUG,,,,,,,,,,,,,,,,,,,,,,,,
+Members team,3,member-team,,,,,,,,,,,,,,,,,,,,,,,,
+Owner Team,2,owner-team,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Secrets & Variables,,,,,,,,,,,,,,,,,,,,
+,,Secrets,Variables,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,closedsearch,0,0,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,emptyrepository,0,0,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,gh-dashboard-db,0,0,,,,,,,,,,,,,,,,,,,,,,,
+clientcoltd,opensearch,0,0,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,

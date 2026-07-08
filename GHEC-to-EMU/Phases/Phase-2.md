@@ -141,6 +141,11 @@ Find issues with no activity in 6 months
 gh issue list --repo OWNER/REPO --state open --json number,title,updatedAt,labels \
   --jq '.[] | select(.updatedAt < (now - 15552000 | todate))'
 ```
+With todays date converted to epoch time (ISO-8601 format): 
+
+```powershell 
+gh issue list --repo OWNER/REPO --state open --json number,title,updatedAt,labels --jq '.[] | select((.updatedAt | fromdateiso8601) < (now - 15552000))'
+```
 
 Close with a descriptive label and comment
 ```bash

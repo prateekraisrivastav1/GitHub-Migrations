@@ -17,7 +17,6 @@ If you are are planning to migrate `containers` or `nuget` packages, you will al
 gh extension upgrade gh-migrate-packages
 ```
 
-
 ## Usage: Export
 
 ```sh
@@ -92,7 +91,6 @@ Total packages found: 432
 🔍 Repositories with packages: 246
 📁 Output directory: packages-migration
 🕐 Total time: 413s
-
 ✅ Export completed successfully!
 ```
 
@@ -139,7 +137,6 @@ gh migrate-packages pull \
 ❌ Failed: 0 packages
 📁 Output directory: package-migration/(npm, maven, nuget, rubygem, docker)
 🕐 Total time: 1h 10m 10s
-
 ✅ Pull completed successfully!
 ```
 
