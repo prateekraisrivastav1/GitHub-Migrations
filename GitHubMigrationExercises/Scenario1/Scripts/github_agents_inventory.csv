@@ -1,0 +1,3 @@
+Scope, Repo/Org Name, Feature, Type , Name
+"Repository","closedsearch","Agents","Variable","REPO_VAR"
+"Organization","ClientCoLtd","Agents","Secret","ORG_SECRET_AGENT"

@@ -1,0 +1,8 @@
+scope,repo_name,env_name,type,feature,name
+repo,closedsearch,Dev,secret,actions,API_KEY
+repo,closedsearch,Dev,secret,actions,PAT_TOKEN
+
+scope,org_name,repo_name,type,feature,name
+repo,ClientCoLtd,closedsearch,secret,actions,REPO_SECRET
+org,ClientCoLtd,,secret,actions,ORG_SECRET
+org,ClientCoLtd,,variable,actions,ORG_VARIABLE

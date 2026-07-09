@@ -1,0 +1,322 @@
+[
+    {
+        "id": 18653785,
+        "name": "Main Branch Access",
+        "target": "branch",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~ALL",
+                    "~DEFAULT_BRANCH"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEcolk",
+        "created_at": "2026-07-08T11:53:12.655+05:30",
+        "updated_at": "2026-07-09T16:23:58.564+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18653785"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18653785"
+            }
+        }
+    },
+{
+        "id": 18653785,
+        "name": "Main Branch Access",
+        "target": "branch",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~ALL",
+                    "~DEFAULT_BRANCH"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEcolk",
+        "created_at": "2026-07-08T11:53:12.655+05:30",
+        "updated_at": "2026-07-09T16:23:58.564+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18653785"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18653785"
+            }
+        }
+    },
+    {
+        "id": 18711458,
+        "name": "MainbranchAccess",
+        "target": "branch",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~DEFAULT_BRANCH"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEdg6I",
+        "created_at": "2026-07-09T16:22:57.367+05:30",
+        "updated_at": "2026-07-09T16:23:13.521+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18711458"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18711458"
+            }
+        }
+    },
+{
+        "id": 18711458,
+        "name": "MainbranchAccess",
+        "target": "branch",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~DEFAULT_BRANCH"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEdg6I",
+        "created_at": "2026-07-09T16:22:57.367+05:30",
+        "updated_at": "2026-07-09T16:23:13.521+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18711458"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18711458"
+            }
+        }
+    },
+    {
+        "id": 18714070,
+        "name": "tag_rule_test",
+        "target": "tag",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~ALL"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEdjdY",
+        "created_at": "2026-07-09T17:46:27.378+05:30",
+        "updated_at": "2026-07-09T17:46:27.415+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18714070"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18714070"
+            }
+        }
+    },
+{
+        "id": 18714070,
+        "name": "tag_rule_test",
+        "target": "tag",
+        "source_type": "Repository",
+        "source": "ClientCoLtd/closedsearch",
+        "enforcement": "active",
+        "conditions": {
+            "ref_name": {
+                "exclude": [],
+                "include": [
+                    "~ALL"
+                ]
+            }
+        },
+        "rules": [
+            {
+                "type": "deletion"
+            },
+            {
+                "type": "non_fast_forward"
+            }
+        ],
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5NARu7zgEdjdY",
+        "created_at": "2026-07-09T17:46:27.378+05:30",
+        "updated_at": "2026-07-09T17:46:27.415+05:30",
+        "bypass_actors": [
+            {
+                "actor_id": null,
+                "actor_type": "OrganizationAdmin",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+            },
+            {
+                "actor_id": 18358195,
+                "actor_type": "Team",
+                "bypass_mode": "always"
+            }
+        ],
+        "current_user_can_bypass": "always",
+        "_links": {
+            "self": {
+                "href": "https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18714070"
+            },
+            "html": {
+                "href": "https://github.com/ClientCoLtd/closedsearch/rules/18714070"
+            }
+        }
+    }
+]

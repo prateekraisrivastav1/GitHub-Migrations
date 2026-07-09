@@ -1,0 +1,4 @@
+org_name, repo_name, ruleset_name, target, enforcement, self_url
+"ClientCoLtd","closedsearch","Main Branch Access","branch","active","https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18653785"
+"ClientCoLtd","closedsearch","MainbranchAccess","branch","active","https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18711458"
+"ClientCoLtd","closedsearch","tag_rule_test","tag","active","https://api.github.com/repos/ClientCoLtd/closedsearch/rulesets/18714070"
